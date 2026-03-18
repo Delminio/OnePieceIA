@@ -1,6 +1,18 @@
 const STORAGE_KEY = "onepiece_ai_premium_state";
+
+const DEFAULT_API_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3000"
+  : "https://onepieceia.onrender.com";
+
+if (!localStorage.getItem("apiBaseUrl")) {
+  localStorage.setItem("apiBaseUrl", DEFAULT_API_URL);
+}
+
+const API_BASE_URL =
+  localStorage.getItem("apiBaseUrl") || DEFAULT_API_URL;
+
 const defaultState = {
-  apiBaseUrl: "http://localhost:3000",
+  apiBaseUrl: API_BASE_URL,
   mode: "hybrid",
   spoilerLevel: "normal",
   messages: []
