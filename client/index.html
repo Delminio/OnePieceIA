@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece AI Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ocean"></div>
+    <div class="glow glow-left"></div>
+    <div class="glow glow-right"></div>
+
+    <main class="layout">
+      <aside class="sidebar card">
+        <div class="brand">
+          <div class="brand-mark">☠</div>
+          <div>
+            <div class="eyebrow">Grand Line Assistant</div>
+            <h1>One Piece AI</h1>
+          </div>
+        </div>
+
+        <p class="sidebar-copy">
+          Chat premium com memória local, respostas estruturadas, busca híbrida e RAG melhorado para anime, mangá e live action.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-pill"><strong>Chat</strong><span>estilo GPT</span></div>
+          <div class="feature-pill"><strong>RAG+</strong><span>multi-fonte</span></div>
+          <div class="feature-pill"><strong>Wiki</strong><span>ao vivo</span></div>
+          <div class="feature-pill"><strong>Fontes</strong><span>clicáveis</span></div>
+        </div>
+
+        <section class="settings">
+          <h2>Ajustes</h2>
+          <label>
+            API Base URL
+            <input id="apiBaseUrl" type="text" placeholder="https://seu-backend.onrender.com" />
+          </label>
+          <div class="settings-row">
+            <label>
+              Modo
+              <select id="mode">
+                <option value="hybrid">hybrid</option>
+                <option value="local">local</option>
+                <option value="wiki">wiki</option>
+              </select>
+            </label>
+            <label>
+              Spoilers
+              <select id="spoilerLevel">
+                <option value="baixo">baixo</option>
+                <option value="normal" selected>normal</option>
+                <option value="alto">alto</option>
+              </select>
+            </label>
+          </div>
+          <button id="clearChatButton" class="ghost-button" type="button">Limpar conversa</button>
+        </section>
+      </aside>
+
+      <section class="chat-shell card">
+        <header class="chat-header">
+          <div>
+            <span class="eyebrow">OpenRouter + One Piece Wiki</span>
+            <h2>Converse com a tripulação</h2>
+          </div>
+          <div class="chat-stats">
+            <div><strong id="sourceCount">0</strong><span>fontes</span></div>
+            <div><strong id="messageCount">0</strong><span>mensagens</span></div>
+          </div>
+        </header>
+
+        <div id="status" class="status">Pronto para navegar pela Grand Line.</div>
+
+        <section id="messages" class="messages"></section>
+
+        <section id="sourcesPanel" class="sources-panel hidden">
+          <div class="panel-header">
+            <h3>Fontes recuperadas</h3>
+            <span id="sourceSummary">0 itens</span>
+          </div>
+          <div id="sources" class="sources"></div>
+        </section>
+
+        <form id="composer" class="composer">
+          <textarea id="question" rows="3" placeholder="Ex.: Compare a história do Sanji no mangá, anime e live action."></textarea>
+          <div class="composer-actions">
+            <div class="composer-tip">Enter envia • Shift+Enter quebra linha</div>
+            <button id="askButton" type="submit">Perguntar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <template id="messageTemplate">
+      <article class="message">
+        <div class="avatar"></div>
+        <div class="bubble-wrap">
+          <div class="meta-line">
+            <strong class="role-name"></strong>
+            <span class="time"></span>
+          </div>
+          <div class="bubble"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
