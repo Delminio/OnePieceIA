@@ -1,0 +1,58 @@
+[
+  {
+    "id": "luffy-core",
+    "title": "Monkey D. Luffy",
+    "category": "manga",
+    "source": "local_knowledge",
+    "url": "local://knowledge/luffy-core",
+    "content": "Monkey D. Luffy é o protagonista de One Piece e capitão dos Piratas do Chapéu de Palha. Seu objetivo é encontrar o One Piece e se tornar o Rei dos Piratas. Luffy ganhou poderes de fruta após comer uma Akuma no Mi ligada ao poder de Nika, revelação explorada mais tarde no mangá. Sua personalidade é impulsiva, leal e centrada em proteger amigos e perseguir liberdade acima de tudo."
+  },
+  {
+    "id": "sanji-core",
+    "title": "Vinsmoke Sanji",
+    "category": "manga",
+    "source": "local_knowledge",
+    "url": "local://knowledge/sanji-core",
+    "content": "Sanji é o cozinheiro dos Piratas do Chapéu de Palha. Ele luta principalmente com chutes porque preserva as mãos para cozinhar. Trabalhou no Baratie sob Zeff e desenvolveu um código de cavalheirismo muito forte, especialmente em relação a mulheres. O arco de Whole Cake Island aprofunda seu passado como membro da família Vinsmoke e mostra o conflito entre seus laços de sangue e a família que escolheu."
+  },
+  {
+    "id": "zoro-core",
+    "title": "Roronoa Zoro",
+    "category": "manga",
+    "source": "local_knowledge",
+    "url": "local://knowledge/zoro-core",
+    "content": "Roronoa Zoro é o espadachim dos Piratas do Chapéu de Palha e sonha em se tornar o maior espadachim do mundo. Seu estilo Santoryu usa três espadas. Ele é um dos combatentes mais fortes da tripulação e tem forte senso de lealdade a Luffy."
+  },
+  {
+    "id": "adaptation-rules",
+    "title": "Diferenças entre mangá, anime e live action",
+    "category": "meta",
+    "source": "local_knowledge",
+    "url": "local://knowledge/adaptation-rules",
+    "content": "Quando houver conflito entre versões, o mangá costuma ser tratado como referência canônica principal. O anime pode expandir cenas, alterar ritmo, incluir fillers e reorganizar momentos. O live action da Netflix adapta arcos com cortes, fusão de cenas e mudanças de estrutura para caber em episódios menos numerosos e com linguagem própria de série."
+  },
+  {
+    "id": "baratie-differences",
+    "title": "Baratie em versões diferentes",
+    "category": "adaptation",
+    "source": "local_knowledge",
+    "url": "local://knowledge/baratie-differences",
+    "content": "No arco de Baratie, o mangá e o anime dedicam mais tempo à construção da relação entre Sanji, Zeff e o restaurante flutuante. O live action adapta esse núcleo emocional, mas reestrutura confrontos e a ordem de certos eventos para manter ritmo televisivo."
+  },
+  {
+    "id": "robin-core",
+    "title": "Nico Robin",
+    "category": "manga",
+    "source": "local_knowledge",
+    "url": "local://knowledge/robin-core",
+    "content": "Nico Robin é a arqueóloga dos Piratas do Chapéu de Palha. Sobreviveu à destruição de Ohara e busca a história verdadeira do mundo por meio dos poneglyphs. Sua entrada no grupo é marcada por desconfiança inicial e posterior vínculo profundo com a tripulação."
+  },
+  {
+    "id": "live-action-overview",
+    "title": "Live action da Netflix",
+    "category": "live_action",
+    "source": "local_knowledge",
+    "url": "local://knowledge/live-action-overview",
+    "content": "O live action de One Piece da Netflix adapta a saga East Blue com elenco em carne e osso e condensação de eventos. Personagens, cenários e lutas foram reinterpretados para linguagem televisiva, mantendo parte importante do espírito de aventura e amizade da obra original."
+  }
+]
