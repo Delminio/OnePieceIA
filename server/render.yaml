@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: onepiece-ai-api
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5.4
+      - key: OPENAI_REASONING_EFFORT
+        value: low
+      - key: OPENAI_WEB_SEARCH_ENABLED
+        value: false
+      - key: WIKI_LIVE_ENABLED
+        value: true
+      - key: WIKI_BASE_URL
+        value: https://onepiece.fandom.com
